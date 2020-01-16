@@ -1,0 +1,180 @@
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background:url("../img/starry_sky.png") center top repeat;
+}
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
+
+/* 顶部导航栏  header */
+/*
+导航条top_bar_nav
+外层div ： top_bar_nav
+内容区div：container
+*/
+
+.top_bar_nav{
+    /* height: 40px; */
+    background-color: black;
+    margin-bottom: 10px;
+}
+.top_bar_nav .container{
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    line-height: 40px;
+}
+/* 
+头部大导航：top_bar
+导航左边div：nav_left
+图片 a   img
+
+导航右边div：nav_right
+导航列表 ul：nav-list
+   单个导航页面li a
+*/
+.top_bar{
+    /* height: 150px; */
+
+}
+.top_bar .container{
+    height: 120px;
+    padding-top:20px;
+    /* background-color: purple; */
+    overflow: hidden;
+}
+
+.top_bar .nav_left{
+    float: left;
+    /* background-color: green; */
+    
+}
+.top_bar .nav_left a{
+    display: block;
+    /* background-color: #FF6700; */
+    text-align: center;
+    
+}
+
+
+.top_bar .nav_left a img{
+    width: 100px;
+    border-radius: 20px;
+    
+}
+/* 图片悬浮缩放 */
+.top_bar .nav_left img:hover{
+    transform:rotateZ(360deg);
+    transition: transform 1.5s cubic-bezier(.8,-.5,.2,1.4);
+
+}
+.top_bar .nav_right{
+    float: left;
+    /* background-color: yellow; */
+    margin-left:40px;
+}
+.top_bar .nav_right .nav_list{
+    width:1000px;
+    margin:0 20px;
+    font-size: 24px;
+    
+}
+.top_bar .nav_right .nav_list li{
+    float:left;
+    background-color: blue;
+    margin-right:20px;
+    text-align: center;
+    
+    position: relative;
+}
+/* 设置阴影 */
+.top_bar .nav_right .nav_list li:hover{
+    top: -10px;
+    box-shadow: 0 10px 15px 	Gray;
+}
+.top_bar .nav_right .nav_list a{
+    display: block;
+    width:80px;
+    height:80px;
+    line-height: 80px;
+    padding:10px 10px;
+}
+/* 顶部导航栏  header----end */
+/* 中心内容区 */
+/* 
+wrapper:最外层div
+container：中心内容区div
+left_container：左边内容子区div
+right_container：右边内容子区div
+center_container：中间内容子区div
+*/
+html,body{
+    height: 100%;
+    width:100%;
+}
+.wrapper{
+    width:100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.wrapper .container{
+    height: 100%;
+    /* background-color: green; */
+}
+.container .left_container{
+    float: left;
+    width:10%;
+    background-color: red;
+    height: 100%;
+}
+.container .right_container{
+    float: right;
+    width:10%;
+    background-color: orange;
+    height: 100%;
+}
+.container .center_container{
+    margin:0 130px;
+    background-color: yellow;
+    height: 100%;
+}
+/* 诗句部分 */
+.poem-header,.poem-container,img{
+    text-align: center;
+}
+.poem-header .poem-name{
+    font-size: 30px;
+}
+.poem-header .poem-author{
+    font: 300 italic 12px/20px sans-serif;
+}
+.poem-container{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* 中心内容区-----end */
+/* 尾部信息区 */
+.footer{
+    /* height: 60px; */
+    margin-bottom: 10px;
+    /* line-height: 60px; */
+}
+.footer .container{
+    height: 100%;
+    background-color: blue;
+    text-align: center;
+    /* font-size: 24px; */
+    
+}
+/* 尾部信息区----end */
