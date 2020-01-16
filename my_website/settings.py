@@ -25,7 +25,7 @@ SECRET_KEY = 'z4=*(&i-44z%2xml(us!^!2tw2jp8@*x=4(e4z5v^mebcvunsf'
 DEBUG = False
 
 ALLOWED_HOSTS = ['139.199.32.236','havename.cn','www.havename.cn']
-# ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
 
 
 # Application definition
