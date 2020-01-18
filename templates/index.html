@@ -1,74 +1,35 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+{% extends "base_index.html" %}
+{% load static %}
+{% block title %}
+    首页
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'blog/css/index.css' %}">
+{% endblock %}
+{% block top_bar_header %}
+    我的个人编程分享网站(建设中。。。V2.0)
+{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
-    <link rel="stylesheet" href="/static/blog/css/index.css">
-</head>
+{% block wrapper-container %}
+    <div class="left_container"></div>
+    <div class="right_container"></div>
+    <div class="center_container">
+        <div class="poem-header">
+            <h3 class="poem-name">菩提偈</h3>
+            <p class="poem-author">【作者】惠能 </p>
+        </div>
+        <div class="poem-container">
+            <p>菩提本无树，明镜亦非台。</p>
+            <p>佛性常清净，何处有尘埃！</p>
+            <p>身是菩提树，心如明镜台。</p>
+            <p>明镜本清净，何处染尘埃！</p>
+            <p>菩提本无树，明镜亦非台。</p>
+            <p>本来无一物，何处惹尘埃！</p>
+            <p>菩提只向心觅，何劳向外求玄？</p>
+            <p>听说依此修行，西方只在目前！</p>
+        </div>
+        <img src="/static/blog/img/index_image.gif" alt="very good">
+    </div>
+{% endblock %}
 
-<body>
-    <div class="header">
-        <div class="top_bar_nav">
-            <div class="container">
-                <h3>我的个人编程分享网站(建设中。。。)</h3>
-            </div>
-        </div>
-        <div class="top_bar">
-            <div class="container">
-                <div class="nav_left">
-                    <a href="">
-                        <img src="static/blog/img/website_log.png" alt="">
-                    </a>
-                </div>
-                <div class="nav_right">
-                    <ul class="nav_list">
-                        <li><a href="">测试1</a></li>
-                        <li><a href="">测试2</a></li>
-                        <li><a href="">测试3</a></li>
-                        <li><a href="">测试3</a></li>
-                        <li><a href="">测试3</a></li>
-                        <li><a href="">测试3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="container">
-            <div class="left_container"></div>
-            <div class="right_container"></div>
-            <div class="center_container">
-                <div class="poem-header">
-                    <h3 class="poem-name">菩提偈</h3>
-                    <p class="poem-author">【作者】惠能 </p>
-                </div>
-                <div class="poem-container">
-                    <p>菩提本无树，明镜亦非台。</p>
-                    <p>佛性常清净，何处有尘埃！</p>
-                    <p>身是菩提树，心如明镜台。</p>
-                    <p>明镜本清净，何处染尘埃！</p>
-                    <p>菩提本无树，明镜亦非台。</p>
-                    <p>本来无一物，何处惹尘埃！</p>
-                    <p>菩提只向心觅，何劳向外求玄？</p>
-                    <p>听说依此修行，西方只在目前！</p>
-                </div>
-                <img src="/static/blog/img/index_image.gif" alt="very good">
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <hr>
-            <a rel="nofollow" href="http://beian.miit.gov.cn" target="_blank">皖ICP备20000656号</a>
-             <div style="width:300px;margin:0 auto; padding:20px 0;">
-                    <img src="/static/blog/img/备案图标.png" alt="">
-                     <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34182102000191" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">皖公网安备 34182102000191号</p></a>
-            </div>
-        </div>
-    </div>
-</body>
 
-</html>

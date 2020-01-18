@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}我的空间{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'blog/css/base_index.css' %}">
+    {% block css %}
+
+    {% endblock %}
+</head>
+
+<body>
+<div class="header">
+    <div class="top_bar_nav">
+        <div class="container">
+            {% block top_bar_header %}建设中。。。{% endblock %}
+        </div>
+    </div>
+    <div class="top_bar">
+        <div class="container">
+            <div class="nav_left">
+                <a href="">
+                    <img src="static/blog/img/website_log.png" alt="">
+                </a>
+            </div>
+            <div class="nav_right">
+                <ul class="nav_list">
+                    <li><a href="">测试1</a></li>
+                    <li><a href="">测试2</a></li>
+                    <li><a href="">测试3</a></li>
+                    <li><a href="">测试3</a></li>
+                    <li><a href="">测试3</a></li>
+                    <li><a href="">测试3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="container">
+        {% block wrapper-container %}
+            建设中。。。
+        {% endblock %}
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <hr>
+        <a rel="nofollow" href="http://beian.miit.gov.cn" target="_blank">皖ICP备20000656号</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
+            <img src="/static/blog/img/备案图标.png" alt="">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34182102000191" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">皖公网安备 34182102000191号</p></a>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
