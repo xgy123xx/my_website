@@ -7,27 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}我的空间{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'blog/css/base_index.css' %}">
+    <script src="/static/blog/js/jquery-3.4.1.js"></script>
+    <script src="/static/blog/js/base_index.js"></script>
     {% block css %}
-
     {% endblock %}
 </head>
 
 <body>
 <div class="header">
-    <div class="top_bar_nav">
+    <div class="top-bar-nav">
         <div class="container">
             {% block top_bar_header %}建设中。。。{% endblock %}
         </div>
     </div>
-    <div class="top_bar">
+    <div class="top-bar">
         <div class="container">
-            <div class="nav_left">
+            <div class="nav-left">
                 <a href="">
                     <img src="static/blog/img/website_log.png" alt="">
                 </a>
             </div>
-            <div class="nav_right">
-                <ul class="nav_list">
+            <div class="nav-right">
+                <ul class="nav-list">
                     <li><a href="">测试1</a></li>
                     <li><a href="">测试2</a></li>
                     <li><a href="">测试3</a></li>
@@ -39,6 +40,19 @@
         </div>
     </div>
 </div>
+<div class="change-skin">
+    <div class="small-img-show">
+        <ul>
+            <li><img src="/static/blog/img/starry_sky.png" alt=""></li>
+            <li><img src="/static/blog/img/blue-snow.png" alt=""></li>
+            <li><img src="/static/blog/img/full-bloom.png" alt=""></li>
+            <li><img src="/static/blog/img/shattered_2X.png" alt=""></li>
+            <li><img src="/static/blog/img/weather.png" alt=""></li>
+        </ul>
+    </div>
+    <span id="left-btn"><img src="/static/blog/img/left.png" alt=""></span>
+</div>
+
 <div class="wrapper">
     <div class="container">
         {% block wrapper-container %}
