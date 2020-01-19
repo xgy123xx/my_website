@@ -1,17 +1,17 @@
 
-.container .left_container{
+.container .left-container{
     float: left;
     width:10%;
     background-color: red;
     height: 100%;
 }
-.container .right_container{
+.container .right-container{
     float: right;
     width:10%;
     background-color: orange;
     height: 100%;
 }
-.container .center_container{
+.container .center-container{
     margin:0 130px;
     background-color: yellow;
     height: 100%;
