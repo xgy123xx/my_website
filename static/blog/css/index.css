@@ -2,31 +2,44 @@
 .container .left-container{
     float: left;
     width:10%;
-    background-color: red;
+    /* background-color: red; */
     height: 100%;
 }
 .container .right-container{
     float: right;
     width:10%;
-    background-color: orange;
+    /* background-color: orange; */
     height: 100%;
 }
 .container .center-container{
     margin:0 130px;
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 100%;
 }
-/* 诗句部分 */
-.poem-header,.poem-container,img{
-    text-align: center;
+/* 滚动图片 slide_wrapper*/
+.slide_wrapper {
+    width:800px;
+    margin:0 200px;
 }
-.poem-header .poem-name{
-    font-size: 30px;
+.slide_wrapper #focus_img {
+    width:600px;
+    height: 400px;
+    padding: 10px 0;
 }
-.poem-header .poem-author{
-    font: 300 italic 12px/20px sans-serif;
+.slide_wrapper .slide_lists{
+    overflow: hidden;
+    width: 600px;
 }
-.poem-container{
-    font-size: 18px;
-    line-height: 30px;
+.slide_wrapper .slide_lists li{
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
 }
+.slide_wrapper .slide_lists li.active{
+    border:2px solid red;
+}
+.slide_wrapper .slide_lists img{
+    width: 100px;
+}
+
+/* slide_wrapper----end */

@@ -6,6 +6,9 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'blog/css/index.css' %}">
 {% endblock %}
+{% block js %}
+    <script src="/static/blog/js/index.js"></script>
+{% endblock %}
 {% block top_bar_header %}
     我的个人编程分享网站(建设中。。。V2.0)
 {% endblock %}
@@ -14,21 +17,16 @@
     <div class="left-container"></div>
     <div class="right-container"></div>
     <div class="center-container">
-        <div class="poem-header">
-            <h3 class="poem-name">菩提偈</h3>
-            <p class="poem-author">【作者】惠能 </p>
+        <div class="slide_wrapper">
+            <img id="focus_img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579541872772&di=0cf599c51ae7ffc8825bab91933cfa09&imgtype=0&src=http%3A%2F%2Fgss0.baidu.com%2F-Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F810a19d8bc3eb135888a72efa51ea8d3fd1f4411.jpg" alt="">
+            <ul class="slide_lists">
+                <li class="active"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579541872772&di=0cf599c51ae7ffc8825bab91933cfa09&imgtype=0&src=http%3A%2F%2Fgss0.baidu.com%2F-Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F810a19d8bc3eb135888a72efa51ea8d3fd1f4411.jpg" alt=""></li>
+                <li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579542276646&di=f2d4d51a77ed6c066062fa6900109023&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F5ab5c9ea15ce36d3c704f35538f33a87e950b156.jpg" alt=""></li>
+                <li><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=310867335,47017775&fm=26&gp=0.jpg" alt=""></li>
+                <li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579542400396&di=3b1e6b0d4c92635d677eebab2fef2eca&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201305%2F25%2F114140rno84n1io4810b1o.jpg" alt=""></li>
+                <li><img src="http://img.netbian.com/file/2019/0925/8aef83dfb5b87eced98c4e39af35fa96.jpg" alt=""></li>
+            </ul>
         </div>
-        <div class="poem-container">
-            <p>菩提本无树，明镜亦非台。</p>
-            <p>佛性常清净，何处有尘埃！</p>
-            <p>身是菩提树，心如明镜台。</p>
-            <p>明镜本清净，何处染尘埃！</p>
-            <p>菩提本无树，明镜亦非台。</p>
-            <p>本来无一物，何处惹尘埃！</p>
-            <p>菩提只向心觅，何劳向外求玄？</p>
-            <p>听说依此修行，西方只在目前！</p>
-        </div>
-        <img src="/static/blog/img/index_image.gif" alt="very good">
     </div>
 {% endblock %}
 
