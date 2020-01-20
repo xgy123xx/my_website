@@ -4,7 +4,6 @@ $(document).ready(function () {
     $('.slide_wrapper .slide_lists li').click(function () {
         $(this).addClass('active').siblings('li').removeClass('active');
         let imgSrc = $(this).children('img').attr("src");
-        console.log(imgSrc);
         $(this).parent('ul').prev('img').attr({"src":imgSrc});
       })
 
