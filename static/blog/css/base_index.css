@@ -30,7 +30,6 @@ body{
 }
 .weather .weather-text{
     height: 40px;
-
 }
 .weather-text span{
     color: #fafafa;
@@ -65,6 +64,21 @@ body{
     text-align: center;
     line-height: 40px;
 }
+
+/* 时间datetime */
+.top-bar-nav .mydate{
+    float: right;
+    /* background-color: red; */
+    
+}
+.top-bar-nav .mydate span{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fafafa;
+}
+/* ----- datetime end */
+
 /*
 头部大导航：top_bar
 导航左边div：nav_left

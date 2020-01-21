@@ -306,4 +306,38 @@ $(function () {
         'https://free-api.heweather.net/s6/weather/now?location=shenyang&key=b89c5798c89b4d09af1bd08ea612c467'
     )
 
+    // 获取时间函数
+    setInterval(getDayTimeStr,1000);
+    function getDayTimeStr() {
+        var now_time = document.getElementById('now_time');
+        var now = new Date();
+        
+        // 1.获取年月日
+        var year = now.getFullYear();
+        var month = now.getMonth()+1;
+        var day = now.getDate();
+
+        //2.获取时分秒
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+
+        // 获取星期
+        var week = now.getDay();
+        var weeks = ['星期天','星期一','星期二','星期三','星期四','星期五','星期六'];
+
+        //3.拼接字符串
+        var tmp = "";
+        tmp = hour > 12 ? hour -12:hour;
+        if(hour == 0){
+            tmp = "12";
+        } 
+        tmp += minute >= 10 ? ":"+minute:":0"+minute;
+        tmp += second >= 10 ? ":"+second:":0"+second;
+        tmp += hour > 12 ? " P.M.":" A.M.";
+        tmp = `${year}年${month}月${day}日 ${tmp} ${weeks[week]}`
+
+        now_time.innerText = tmp;
+    }
+
 });
