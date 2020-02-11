@@ -20,4 +20,5 @@ from blog import views
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('',views.index),
+    path('get_img_list/',views.get_img_list),
 ]

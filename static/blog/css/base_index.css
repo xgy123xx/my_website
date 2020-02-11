@@ -162,7 +162,7 @@ body{
 }
 .change-skin .small-img-show {
     display: None;
-    width: 320px;
+    /* width: 320px; */
     height: 54px;
     float: left;
 }
@@ -175,6 +175,9 @@ body{
     margin: 10px 0 10px 10px;
     cursor: pointer;
 
+}
+.change-skin .small-img-show ul li:last-child{
+    margin-right: 10px;
 }
 .change-skin .small-img-show ul li img{
     width:50px;

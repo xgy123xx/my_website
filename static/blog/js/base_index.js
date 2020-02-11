@@ -4,12 +4,53 @@
 $(function () {
     console.log("hello world");
     // 处理change-skin
+
+    //第一次执行点击按钮时，初始化壁纸操作
+    function init_show_img() {
+        var img_list = []
+        //获取壁纸列表  使用ajax获取后台数据
+        $.ajax({
+            url: "/get_img_list",
+            type: "get",
+            data: {
+                "img_num": 4
+            },
+            success: function (data) {
+                // console.log(data);
+                img_list = JSON.parse(data);
+                $(".small-img-show ul").empty();
+                //遍历列表，创建li，创建img
+                for (let i = 0; i < img_list.length; i++) {
+                    let tag_str = `<li><img src="${img_list[i]}" alt=""></li>`
+                    $(".small-img-show ul").append(tag_str)
+                    console.log(tag_str);
+                }
+            }
+        })
+    }
+    var IS_INIT_IMG = false;
+
     // 隐藏和显示部分部分
     $('#left-btn').click(function () {
+        // if (!IS_INIT_IMG) {
+        //     init_show_img();
+        //     IS_INIT_IMG = true;
+        // }
+        if($(".small-img-show ul li").length){
+            console.log("yes,li");
+            
+        }else{
+            $(".small-img-show ul").append("<li>加载中...</li>");
+            init_show_img();
+        }
         $('.small-img-show').stop().animate({
             width: 'toggle'
         }, 350);
     });
+
+
+
+
     //设置点击图片就切换为背景  原生js
     //1.设置li标签的点击事件   chidren谷歌浏览器把回车文本节点当孩子节点
     var oDivSmallImg = document.getElementsByClassName('small-img-show')[0];
@@ -22,6 +63,9 @@ $(function () {
             document.body.style.backgroundImage = `url("${ImgSrc}")`
         }
     }
+
+
+
 
     //设置导航栏的天气
     moment.defineLocale('zh-cn', {
@@ -284,7 +328,7 @@ $(function () {
                     var cond_txt = now.cond_txt;
                     var f1 = now.f1;
                     var tmp = now.tmp;
-                    
+
                     $('.weather-text .city').text(city + " : ");
                     $('.weather-text .tmp').text(tmp + "℃");
                     $('.weather-text .f1').text(f1);
@@ -307,14 +351,15 @@ $(function () {
     )
 
     // 获取时间函数
-    setInterval(getDayTimeStr,1000);
+    setInterval(getDayTimeStr, 1000);
+
     function getDayTimeStr() {
         var now_time = document.getElementById('now_time');
         var now = new Date();
-        
+
         // 1.获取年月日
         var year = now.getFullYear();
-        var month = now.getMonth()+1;
+        var month = now.getMonth() + 1;
         var day = now.getDate();
 
         //2.获取时分秒
@@ -324,17 +369,17 @@ $(function () {
 
         // 获取星期
         var week = now.getDay();
-        var weeks = ['星期天','星期一','星期二','星期三','星期四','星期五','星期六'];
+        var weeks = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
 
         //3.拼接字符串
         var tmp = "";
-        tmp = hour > 12 ? hour -12:hour;
-        if(hour == 0){
+        tmp = hour > 12 ? hour - 12 : hour;
+        if (hour == 0) {
             tmp = "12";
-        } 
-        tmp += minute >= 10 ? ":"+minute:":0"+minute;
-        tmp += second >= 10 ? ":"+second:":0"+second;
-        tmp += hour > 12 ? " P.M.":" A.M.";
+        }
+        tmp += minute >= 10 ? ":" + minute : ":0" + minute;
+        tmp += second >= 10 ? ":" + second : ":0" + second;
+        tmp += hour > 12 ? " P.M." : " A.M.";
         tmp = `${year}年${month}月${day}日 ${tmp} ${weeks[week]}`
 
         now_time.innerText = tmp;
