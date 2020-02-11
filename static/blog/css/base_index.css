@@ -9,7 +9,7 @@ ul{
     list-style: none;
 }
 body{
-    background:url("/static/blog/img/starry_sky.png") center top repeat;
+    background:url("/static/blog/img/shattered_2X.png") center top repeat;
 }
 .container{
     width: 1200px;
@@ -54,13 +54,13 @@ body{
 
 .top-bar-nav{
     /* height: 40px; */
-    background-color: black;
-    opacity: 0.6;
+    background-color:  #333;
+    opacity: 0.8;
     margin-bottom: 10px;
 }
 .top-bar-nav .container{
     height: 40px;
-    background-color: red;
+    /*background-color:red;*/
     text-align: center;
     line-height: 40px;
 }
@@ -135,8 +135,8 @@ body{
     float:left;
     background-color: blue;
     margin-right:20px;
+    border-radius: 80px;
     text-align: center;
-
     position: relative;
 }
 /* 设置阴影 */
@@ -211,7 +211,7 @@ html,body{
     /* background-color: green; */
 }
 
-
+/*底部信息区*/
 .footer{
     /* height: 60px; */
     margin-bottom: 10px;

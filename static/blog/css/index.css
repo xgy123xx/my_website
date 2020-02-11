@@ -1,16 +1,47 @@
+/*中间左侧内容区*/
 
 .container .left-container{
     float: left;
-    width:10%;
-    /* background-color: red; */
+    width:20%;
+     /* background-color: red; */
     height: 100%;
 }
+.container .left-container ul li{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: green;
+    text-align: center;
+
+}
+.container .left-container ul li a{
+    display: block;
+    color:#fafafa;
+}
+.container .left-container ul li:hover{
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    background-color: #ff6700;
+}
+.container .left-container ul li.active{
+    background-color: red;
+}
+
+
+/*中间左侧内容区end  -----*/
+
+/*中间右侧内容区*/
 .container .right-container{
     float: right;
     width:10%;
     /* background-color: orange; */
     height: 100%;
 }
+/*中间右侧内容区end  -----*/
+
+/*中间中心内容区*/
 .container .center-container{
     margin:0 130px;
     /* background-color: yellow; */
@@ -43,3 +74,4 @@
 }
 
 /* slide_wrapper----end */
+/*中间中心内容区---end*/
