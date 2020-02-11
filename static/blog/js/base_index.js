@@ -24,6 +24,19 @@ $(function () {
                     let tag_str = `<li><img src="${img_list[i]}" alt=""></li>`
                     $(".small-img-show ul").append(tag_str)
                     console.log(tag_str);
+
+                //设置点击图片就切换为背景  原生js
+                //1.设置li标签的点击事件   chidren谷歌浏览器把回车文本节点当孩子节点
+                var oDivSmallImg = document.getElementsByClassName('small-img-show')[0];
+                var Olis = oDivSmallImg.getElementsByTagName('li');
+                for (let i = 0; i < Olis.length; i++) {
+                    Olis[i].onclick = function () {
+                        //2. 获取图片url  this == Olis[i]
+                        let ImgSrc = this.getElementsByTagName('img')[0].src;
+                        //3. 设置src为背景
+                        document.body.style.backgroundImage = `url("${ImgSrc}")`
+                    }
+                }
                 }
             }
         })
@@ -47,25 +60,6 @@ $(function () {
             width: 'toggle'
         }, 350);
     });
-
-
-
-
-    //设置点击图片就切换为背景  原生js
-    //1.设置li标签的点击事件   chidren谷歌浏览器把回车文本节点当孩子节点
-    var oDivSmallImg = document.getElementsByClassName('small-img-show')[0];
-    var Olis = oDivSmallImg.getElementsByTagName('li');
-    for (let i = 0; i < Olis.length; i++) {
-        Olis[i].onclick = function () {
-            //2. 获取图片url  this == Olis[i]
-            let ImgSrc = this.getElementsByTagName('img')[0].src;
-            //3. 设置src为背景
-            document.body.style.backgroundImage = `url("${ImgSrc}")`
-        }
-    }
-
-
-
 
     //设置导航栏的天气
     moment.defineLocale('zh-cn', {
