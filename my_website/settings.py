@@ -22,10 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z4=*(&i-44z%2xml(us!^!2tw2jp8@*x=4(e4z5v^mebcvunsf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['139.199.32.236','havename.cn','www.havename.cn']
-#ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['139.199.32.236','havename.cn','www.havename.cn']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog'
 ]
 
 MIDDLEWARE = [
@@ -76,8 +77,12 @@ WSGI_APPLICATION = 'my_website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': "my_website",
+        "USER":"my_website",
+        "PASSWORD":"qwaszx",
+        "HOST":"localhost",
+        "PORT":"3306"
     }
 }
 
