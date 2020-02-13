@@ -154,6 +154,54 @@ body{
 /* 顶部导航栏  header----end */
 
 /* 侧边修改壁纸 change-skin */
+/* 加载动画部分 */
+.sk-three-bounce{
+    position: absolute;
+    top:20%;
+    left: 30%;
+}
+.sk-three-bounce .sk-child{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+    -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+    
+}
+.sk-three-bounce .sk-bounce1{
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.sk-three-bounce .sk-bounce2{
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+/* 自定义动画部分 */
+@keyframes sk-three-bounce {
+    0%,80%,100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes sk-three-bounce {
+    0%,80%,100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+/* 自定义动画部分 ---end*/
+/* 加载动画部分 ---end*/
 .change-skin {
     position: absolute;
     top: 80px;

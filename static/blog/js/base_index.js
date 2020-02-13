@@ -18,7 +18,7 @@ $(function () {
             success: function (data) {
                 // console.log(data);
                 img_list = JSON.parse(data);
-                $(".small-img-show ul").empty();
+                // $(".small-img-show ul").empty();
                 //遍历列表，创建li，创建img
                 for (let i = 0; i < img_list.length; i++) {
                     let tag_str = `<li><img src="${img_list[i]}" alt=""></li>`
@@ -37,23 +37,32 @@ $(function () {
                         document.body.style.backgroundImage = `url("${ImgSrc}")`
                     }
                 }
+                setTimeout(function () {
+                    $(".sk-three-bounce").hide();
+                  },350)
                 }
             }
         })
     }
-    var IS_INIT_IMG = false;
 
     // 隐藏和显示部分部分
     $('#left-btn').click(function () {
-        // if (!IS_INIT_IMG) {
-        //     init_show_img();
-        //     IS_INIT_IMG = true;
-        // }
         if($(".small-img-show ul li").length){
             console.log("yes,li");
             
         }else{
-            $(".small-img-show ul").append("<li>加载中...</li>");
+            let loadingTagStr = `
+            
+            <div class="sk-three-bounce">
+                <div class="sk-child sk-bounce1"></div>
+                <div class="sk-child sk-bounce2"></div>
+                <div class="sk-child sk-bounce3"></div>
+            </div>
+            
+            `
+
+            $(".small-img-show ul").append(loadingTagStr);
+            $(".sk-three-bounce").show();
             init_show_img();
         }
         $('.small-img-show').stop().animate({
