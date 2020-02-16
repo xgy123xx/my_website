@@ -1,0 +1,14 @@
+/*底部信息区*/
+.footer{
+    /* height: 60px; */
+    margin-bottom: 10px;
+    /* line-height: 60px; */
+}
+.footer .container{
+    height: 100%;
+    background-color: #fafafa;
+    text-align: center;
+    /* font-size: 24px; */
+
+}
+/* 尾部信息区----wrapper end */

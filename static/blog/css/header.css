@@ -1,0 +1,232 @@
+/* 顶部导航栏  header */
+.header {
+    background-color: #e6e6e6;
+    margin-bottom: 10px;
+}
+/*
+导航条top_bar_nav
+外层div ： top_bar_nav
+内容区div：container
+*/
+/* 天气weather */
+.weather{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.weather .weather-text{
+    height: 40px;
+}
+.weather-text span{
+    color: #fafafa;
+}
+.weather img{
+    width: 40px;
+    vertical-align: middle;
+}
+
+.weather .show-weather{
+    display: none;
+    /* width: 300px;
+    height: 300px; */
+    background-color: antiquewhite;
+}
+.every_weather .everyday_item{
+    display: inline-block;
+    padding: 20px;
+}
+
+/* weather end-------- */
+
+.top-bar-nav{
+    background-color:  #333;
+    opacity: 0.8;
+}
+.top-bar-nav .container{
+    height: 40px;
+    /*background-color:red;*/
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 时间datetime */
+.top-bar-nav .mydate{
+    float: right;
+    /* background-color: red; */
+
+}
+.top-bar-nav .mydate span{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fafafa;
+}
+/* ----- datetime end */
+
+/*
+头部大导航：top_bar
+导航左边div：nav_left
+图片 a   img
+
+导航右边div：nav_right
+导航列表 ul：nav-list
+   单个导航页面li a
+*/
+
+.top-bar .container{
+    padding-top:10px;
+    /* background-color: purple; */
+    overflow: hidden;
+}
+
+.top-bar .nav-left{
+    float: left;
+    /* background-color: green; */
+    margin-left:40px;
+
+}
+.top-bar .nav-left a{
+    display: block;
+    /* background-color: #FF6700; */
+    text-align: center;
+
+}
+
+.top-bar .nav-left a img{
+    width: 60px;
+    border-radius: 20px;
+
+}
+/* 图片悬浮缩放 */
+.top-bar .nav-left img:hover{
+    transform:rotateZ(360deg);
+    transition: transform 1.5s cubic-bezier(.8,-.5,.2,1.4);
+
+}
+/* 右边导航 */
+.top-bar .nav-right{
+    float: left;
+    /* background-color: yellow; */
+    margin-left:220px;
+}
+.top-bar .nav-right .nav-list{
+    /* width:1000px; */
+    margin:0 20px;
+    font-size: 20px;
+
+}
+.top-bar .nav-right .nav-list li{
+    float:left;
+    /* background-color: blue; */
+    /* margin-right:20px; */
+    /* border-radius: 80px; */
+    text-align: center;
+    position: relative;
+}
+/* 设置阴影 */
+.top-bar .nav-right .nav-list li:hover{
+    top: -5px;
+    box-shadow: 0 10px 15px 	Gray;
+    background-color: blue;
+    
+}
+.top-bar .nav-right .nav-list a{
+    display: block;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 10px 0;
+}
+.top-bar .nav-right .nav-list a:hover{
+    color: #fafafa;
+}
+/* 侧边修改壁纸 change-skin */
+/* 加载动画部分 */
+.sk-three-bounce{
+    position: absolute;
+    top:20%;
+    left: 30%;
+}
+.sk-three-bounce .sk-child{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+    -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+
+}
+.sk-three-bounce .sk-bounce1{
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.sk-three-bounce .sk-bounce2{
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+/* 自定义动画部分 */
+@keyframes sk-three-bounce {
+    0%,80%,100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes sk-three-bounce {
+    0%,80%,100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+/* 自定义动画部分 ---end*/
+/* 加载动画部分 ---end*/
+.change-skin {
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    overflow: hidden;
+}
+.change-skin #left-btn{
+    /* height: 20px; */
+}
+.change-skin .small-img-show {
+    display: None;
+    height: 20px;
+    float: left;
+}
+.change-skin .small-img-show ul {
+    overflow: hidden;
+    background-color: rgba(255,255,255,.5);
+}
+.change-skin .small-img-show ul li {
+    float: left;
+    margin: 10px 0 10px 10px;
+    cursor: pointer;
+
+}
+.change-skin .small-img-show ul li:last-child{
+    margin-right: 10px;
+}
+.change-skin .small-img-show ul li img{
+    width:30px;
+    height: 30px;
+}
+#left-btn {
+    float: left;
+    display: block;
+    cursor: pointer;
+    background: black;
+}
+
+/* change-skin ---end */
+
+/* 顶部导航栏  header----end */
