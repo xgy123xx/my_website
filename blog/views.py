@@ -1,11 +1,14 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render,HttpResponse,redirect
 from blog.models import ImgInfo
 import json
 # Create your views here.
 def index(request):
-    return render(request,"index.html")
+    # return render(request,"index.html")
+    return redirect("/home/comic")
 
 def index_theme(request,joy_theme):
+    if joy_theme in ["comic","mobile_game","network_game","single_game","wallpaper"]:
+        return render(request,"./home/%s.html"%joy_theme)
     return HttpResponse("OK: "+joy_theme)
 
 def get_img_list(request):

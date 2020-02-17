@@ -2,7 +2,7 @@
 
 .container .left-container{
     float: left;
-    width:20%;
+    width:19%;
      /* background-color: red; */
     height: 100%;
 }
@@ -35,42 +35,8 @@
 /*中间右侧内容区*/
 .container .right-container{
     float: right;
-    width:10%;
-    /* background-color: orange; */
+
     height: 100%;
+    width:80%;
 }
 /*中间右侧内容区end  -----*/
-
-/*中间中心内容区*/
-.container .center-container{
-    margin:0 130px;
-    /* background-color: yellow; */
-    height: 100%;
-}
-/* 滚动图片 slide_wrapper*/
-.slide_wrapper {
-    width:800px;
-    margin:0 200px;
-}
-.slide_wrapper #focus_img {
-    width:600px;
-    height: 400px;
-    padding: 10px 0;
-}
-.slide_wrapper .slide_lists{
-    overflow: hidden;
-    width: 600px;
-}
-.slide_wrapper .slide_lists li{
-    float: left;
-    margin-right: 15px;
-    cursor: pointer;
-}
-.slide_wrapper .slide_lists li.active{
-    border:2px solid red;
-}
-.slide_wrapper .slide_lists img{
-    width: 100px;
-}
-/* slide_wrapper----end */
-/*中间中心内容区---end*/

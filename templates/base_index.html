@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}我的空间{% endblock %}</title>
+    <title>我的空间</title>
     <link rel="stylesheet" href="{% static 'blog/css/base_index.css' %}">
     <script src="/static/blog/js/jquery-3.4.1.js"></script>
     <script src="/static/blog/js/base_index.js"></script>
@@ -21,7 +21,7 @@
 {#顶部导航栏区域#}
 {% include "header.html" %}
 {#中间部分#}
-    <div class="wrapper">
+    <div class="wrapper clearfix">
         <div class="container">
             {% block wrapper-container %}
             建设中。。。

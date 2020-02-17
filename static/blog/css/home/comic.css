@@ -1,0 +1,76 @@
+/* 滚动图片 slide_wrapper*/
+.slide_wrapper {
+    width:800px;
+    margin:0 200px;
+}
+.slide_wrapper #focus_img {
+    width:600px;
+    height: 400px;
+    padding: 10px 0;
+}
+.slide_wrapper .slide_lists{
+    overflow: hidden;
+    width: 600px;
+}
+.slide_wrapper .slide_lists li{
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.slide_wrapper .slide_lists li.active{
+    border:2px solid red;
+}
+.slide_wrapper .slide_lists img{
+    width: 100px;
+}
+/* slide_wrapper----end */
+/* 文章列表 container-article */
+.container-article{
+    padding: 20px 0;
+    /* background-color: blue; */
+    padding-left: 100px;
+}
+.container-article ul{
+    border: 2px solid black;
+}
+.container-article ul li{
+    /* background-color: green; */
+    border-bottom: 2px dotted #cecece;
+    margin-bottom: 0px;
+    padding:0 0 0 10px;
+    overflow: hidden;
+}
+.container-article ul li .article-header{
+    text-align: left;
+    padding: 10px 0 15px 0;
+}
+.container-article ul li .article-header a{
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+}
+.container-article ul li .article-header a:hover{
+    text-decoration: underline;
+    color: 		#FF0000;
+}
+.container-article ul li .article-content a{
+    margin-right: 20px;
+}
+.container-article ul li .article-content img{
+    width: 100px;
+    height: 100px;
+}
+.container-article ul li .article-content .article-text{
+    display: inline-block;
+    width: 650px;
+    height: 100px;
+    vertical-align: top;
+    color:#555;
+    /* display: -webkit-box; */
+    /* text-overflow: ellipsis; */
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-line-clamp: 3; */
+}
+/* container-article------end */

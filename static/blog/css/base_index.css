@@ -24,16 +24,22 @@ right_container：右边内容子区div
 center_container：中间内容子区div
 */
 html,body{
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 }
 .wrapper{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin-bottom: 10px;
 }
 .wrapper .container{
-    height: 100%;
+    /* height: 100%; */
     /* background-color: green; */
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+
 }
 /* 中心内容区 wrapper----end*/
