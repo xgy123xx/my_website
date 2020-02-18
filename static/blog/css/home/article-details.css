@@ -1,0 +1,39 @@
+/* 文章详情页设计 */
+.article-details {
+    margin: 20px 50px 50px;
+    background-color: #f2f2f3;
+    padding-bottom: 20px;
+}
+/* article-header文章头部 */
+.article-header{
+    text-align: center;
+    border-bottom: 1px dotted #cecece;
+    margin-bottom: 5px;
+}
+.article-header h1{
+    padding: 20px;
+}
+.article-header .title-detail{
+    color: #777;
+    height: 30px;
+    
+}
+/* article-header----end */
+/* article-content 文章内容区 */
+.article-content{
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 28px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.article-content p{
+    margin: 1em 0;
+    text-align: left;
+}
+.article-content img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+/* article-content---end */
