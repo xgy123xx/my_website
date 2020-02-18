@@ -14,6 +14,9 @@ def index_theme(request,joy_theme):
 def index_article(request,year,month):
     return render(request,"./home/article_details.html")
 
+def index_article_list(request):
+    return render(request,"./home/article_list.html")
+
 def get_img_list(request):
     if request.method == "GET":
         img_num = request.GET.get("img_num")

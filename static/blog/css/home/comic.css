@@ -2,6 +2,7 @@
 .slide_wrapper {
     width:800px;
     margin:0 200px;
+    height: 500px;
 }
 .slide_wrapper #focus_img {
     width:600px;
@@ -29,6 +30,7 @@
     padding: 20px 0;
     /* background-color: blue; */
     padding-left: 100px;
+    
 }
 .container-article ul{
     border: 2px solid black;
@@ -74,3 +76,17 @@
     /* -webkit-line-clamp: 3; */
 }
 /* container-article------end */
+/* more更多 */
+.more{
+    text-align: right;
+    padding: 1px 20px ;
+}
+.more a{
+    color: #565656;
+    
+}
+.more a:hover{
+    color: #c72000;
+    text-decoration: underline;
+}
+/* more---end */
