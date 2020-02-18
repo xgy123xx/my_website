@@ -1,0 +1,93 @@
+/* 文章列表样式 */
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+.article-list{
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 10px 20px;
+}
+.article-list .top-article{
+    padding: 20px 0;
+    color: #8b8b8b;
+    width: 100%;
+}
+.article-list .top-article a{
+    /* float: left; */
+}
+.article-list .top-article a img{
+    width: 280px;
+}
+.article-list .top-article .sub-title{
+    /* float: left; */
+    display: inline-block;
+    width: 500px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+.article-list .top-article .sub-title h2{
+    padding: 5px 0 10px 0;
+
+}
+.article-list .top-article .sub-title h2 a{
+    color: #333;
+    font-size: 22px;
+}
+.article-list .top-article .sub-title p.title-details{
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: 2em;
+    margin-bottom: 10px;
+}
+/* 列表部分 */
+.page-list{
+
+}
+.page-list ul{
+
+}
+.page-list ul li{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px dotted #d6d6d6;
+    margin-bottom: 10px;
+    text-indent: 30px;
+}
+.page-list ul li a{
+    display: block;
+    color:#666;
+    font-size:16px;
+    line-height: 45px;
+    position: relative;
+}
+
+.page-list ul li a i{
+    position: absolute;
+    left: -30px;
+    top:0;
+}
+.page-list ul li a span{
+    color: #888888;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+}
+.page-list ul li a:hover{
+    color: #D8160D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
