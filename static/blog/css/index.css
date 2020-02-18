@@ -1,12 +1,11 @@
 /*中间左侧内容区*/
-
-.container .left-container{
+.left-container{
     float: left;
     width:19%;
      /* background-color: red; */
     height: 100%;
 }
-.container .left-container ul li{
+.left-container ul li{
     height: 50px;
     line-height: 50px;
     margin-bottom: 15px;
@@ -15,17 +14,17 @@
     text-align: center;
 
 }
-.container .left-container ul li a{
+.left-container ul li a{
     display: block;
     color:#fafafa;
 }
-.container .left-container ul li:hover{
+.left-container ul li:hover{
     height: 70px;
     line-height: 70px;
     font-size: 24px;
     background-color: #ff6700;
 }
-.container .left-container ul li.active{
+.left-container ul li.active{
     background-color: red;
 }
 
@@ -33,7 +32,7 @@
 /*中间左侧内容区end  -----*/
 
 /*中间右侧内容区*/
-.container .right-container{
+.right-container{
     float: right;
 
     height: 100%;
